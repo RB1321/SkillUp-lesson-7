@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    /* font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Serif', serif; */
+    position: relative;
+}
+
+header {
+    background-color: #F2F2F2;
+    height: 100px;
+    position: relative;
+}
+header::after, .menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.menu, .title {
+    float: left;
+    width: 50%;
+}
+.title {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    padding-top: 15px;
+    padding-left: 80px;
+}
+.menu li {
+    list-style-type: none;
+    float: right;
+    margin: 20px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #171717;
+}
+.menu li a:hover {
+    color: #C9A96E;
+}
+.main-topic-container  {
+    position: relative;;
+}
+.main-topic-container img {
+    width: 100%;
+}
+.main-topic-descriprion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    text-align: left;
+    padding: 15px;
+}
+.main-topic-type {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main-topic-title {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 10px 0 10px;
+}
+.main-topic-date-author {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.topics-container {
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.topics-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.topic-block {
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    text-align: center;
+    width: 370px;
+    float: left;
+    margin: 15px;
+    box-shadow: 3px 3px 2px #0000003a;
+}
+.topic-block img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: -3px;
+}
+.topic-block-text {
+    height: 130px;
+    background-color: #FFFFFF;
+    padding: 0px;
+}
+.topic-type {
+    font-family: 'PT Sans', sans-serif;
+    color: #C9A96E;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 auto 0;
+    padding-top: 15px;
+}
+.topic-title {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:  #171717;
+    width: 70%;
+    margin: 0 auto 0;
+}
+.topic-date-author {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    color:  #666666;
+}
+
+
+/* Далі доформувати блок. відцентрувати блоки в топіку. відцентрувати самі топіки. зробити адаптивну верстку*/
